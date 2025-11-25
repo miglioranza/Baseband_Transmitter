@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"tb_Design_2_wrapper_func_impl.vhd" \
+"../../../../../../../tb_design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

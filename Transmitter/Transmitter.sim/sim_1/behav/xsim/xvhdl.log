@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/ihp/departments/D-SYA/work/miglioranza/Transmitter_repo/Transmitter/Transmitter.gen/sources_1/bd/Design_2/hdl/Design_2_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Design_2_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "/ihp/departments/D-SYA/work/miglioranza/tb_design_1_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_Design_2_wrapper'

@@ -1,0 +1,270 @@
+
+*** Running vivado
+    with args -log block_interleaver.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source block_interleaver.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source block_interleaver.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3066.734 ; gain = 2.016 ; free physical = 14471 ; free virtual = 95064
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/miglioranza/Interleaver_BB/Interleaver_BB.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/ihpusr/xilinx/vivado2021.2/Vivado/2021.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /home/miglioranza/Interleaver_BB/Interleaver_BB.srcs/utils_1/imports/synth_1/block_interleaver.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/miglioranza/Interleaver_BB/Interleaver_BB.srcs/utils_1/imports/synth_1/block_interleaver.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top block_interleaver -part xczu28dr-ffvg1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4053559
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 3096.941 ; gain = 0.000 ; free physical = 13663 ; free virtual = 94268
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'block_interleaver' [/home/miglioranza/Interleaver_BB/Interleaver_BB.srcs/sources_1/new/Interleaver.vhd:65]
+WARNING: [Synth 8-614] signal 'code_rate' is read in the process but is not in the sensitivity list [/home/miglioranza/Interleaver_BB/Interleaver_BB.srcs/sources_1/new/Interleaver.vhd:89]
+WARNING: [Synth 8-6014] Unused sequential element adaptive_interleaver.temp_reg was removed.  [/home/miglioranza/Interleaver_BB/Interleaver_BB.srcs/sources_1/new/Interleaver.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'block_interleaver' (1#1) [/home/miglioranza/Interleaver_BB/Interleaver_BB.srcs/sources_1/new/Interleaver.vhd:65]
+WARNING: [Synth 8-7129] Port code_rate[1] in module block_interleaver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port code_rate[0] in module block_interleaver is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 3096.941 ; gain = 0.000 ; free physical = 12845 ; free virtual = 93450
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3096.941 ; gain = 0.000 ; free physical = 12550 ; free virtual = 93155
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3106.945 ; gain = 10.004 ; free physical = 12545 ; free virtual = 93150
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'block_interleaver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                   write |                              010 |                               01
+                    read |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'block_interleaver'
+INFO: [Synth 8-6904] The RAM "block_interleaver/memory_reg" of size (depth=63 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3106.945 ; gain = 10.004 ; free physical = 12482 ; free virtual = 93088
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               1K Bit	(63 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "block_interleaver/memory_reg" of size (depth=63 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-7129] Port code_rate[1] in module block_interleaver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port code_rate[0] in module block_interleaver is either unconnected or has no load
+INFO: [Synth 8-6904] The RAM "block_interleaver/memory_reg" of size (depth=63 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 12108 ; free virtual = 92720
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------+------------+-----------+----------------------+--------------+
+|Module Name       | RTL Object | Inference | Size (Depth x Width) | Primitives   | 
++------------------+------------+-----------+----------------------+--------------+
+|block_interleaver | memory_reg | Implied   | 64 x 32              | RAM64M8 x 5  | 
++------------------+------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 12078 ; free virtual = 92690
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------------+------------+-----------+----------------------+--------------+
+|Module Name       | RTL Object | Inference | Size (Depth x Width) | Primitives   | 
++------------------+------------+-----------+----------------------+--------------+
+|block_interleaver | memory_reg | Implied   | 64 x 32              | RAM64M8 x 5  | 
++------------------+------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 12062 ; free virtual = 92674
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 11971 ; free virtual = 92583
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 11971 ; free virtual = 92583
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 11971 ; free virtual = 92583
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 11971 ; free virtual = 92583
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 11972 ; free virtual = 92584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 11972 ; free virtual = 92584
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY8  |    72|
+|3     |LUT1    |    47|
+|4     |LUT2    |    82|
+|5     |LUT3    |   133|
+|6     |LUT4    |   123|
+|7     |LUT5    |    94|
+|8     |LUT6    |   288|
+|9     |RAM64M8 |     5|
+|10    |FDCE    |    83|
+|11    |FDPE    |     1|
+|12    |FDRE    |    66|
+|13    |IBUF    |    38|
+|14    |OBUF    |    35|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  1068|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 11973 ; free virtual = 92585
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3466.562 ; gain = 369.621 ; free physical = 11972 ; free virtual = 92583
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 3466.570 ; gain = 369.621 ; free physical = 11972 ; free virtual = 92584
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3474.562 ; gain = 0.000 ; free physical = 12264 ; free virtual = 92880
+INFO: [Netlist 29-17] Analyzing 116 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'block_interleaver' is not ideal for floorplanning, since the cellview 'block_interleaver' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3622.121 ; gain = 0.000 ; free physical = 12021 ; free virtual = 92641
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 44 instances were transformed.
+  BUFG => BUFGCE: 1 instance 
+  IBUF => IBUF (IBUFCTRL, INBUF): 38 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 5 instances
+
+Synth Design complete, checksum: 386e9d09
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:53 . Memory (MB): peak = 3622.121 ; gain = 555.387 ; free physical = 12092 ; free virtual = 92712
+INFO: [Common 17-1381] The checkpoint '/home/miglioranza/Interleaver_BB/Interleaver_BB.runs/synth_1/block_interleaver.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file block_interleaver_utilization_synth.rpt -pb block_interleaver_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 29 13:32:17 2025...

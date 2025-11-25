@@ -1,0 +1,25 @@
+xmsim(64): 20.09-s007: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> set pack_assert_off {numeric_std std_logic_arith}
+numeric_std std_logic_arith
+xcelium> 
+xcelium> dumpsaif -scope /home/miglioranza/Mapper/Mapper.srcs/sources_1/imports/miglioranza/mapper.vhd -overwrite -output mapper_toggle
+xmsim: *E,SAFBDS: The scope argument (/home/miglioranza/Mapper/Mapper.srcs/sources_1/imports/miglioranza/mapper.vhd) could not be found in the design hierarchy.
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> catch {probe -create -shm -all -variables -depth 1 -waveform} msg
+0
+xcelium> 
+xcelium> run 1000ns
+REPORT/NOTE (time 20 NS) from process :stim_proc (architecture xil_defaultlib.mapper_tb:behavior)
+Start of simulation
+REPORT/NOTE (time 775 NS) from process :stim_proc (architecture xil_defaultlib.mapper_tb:behavior)
+End of Simulation
+Ran until 1 US + 0
+xcelium> dumpsaif -end
+xmsim: *W,SFALDM: No data available for the Backward SAIF file.
+xcelium> 
+xcelium> ^C
+xcelium> exit

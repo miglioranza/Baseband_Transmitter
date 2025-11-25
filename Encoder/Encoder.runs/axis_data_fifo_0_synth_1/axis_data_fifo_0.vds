@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Oct 23 11:32:29 2025
+# Process ID: 75140
+# Current directory: /ihp/departments/D-SYA/work/miglioranza/Encoder/Encoder.runs/axis_data_fifo_0_synth_1
+# Command line: vivado -log axis_data_fifo_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axis_data_fifo_0.tcl
+# Log file: /ihp/departments/D-SYA/work/miglioranza/Encoder/Encoder.runs/axis_data_fifo_0_synth_1/axis_data_fifo_0.vds
+# Journal file: /ihp/departments/D-SYA/work/miglioranza/Encoder/Encoder.runs/axis_data_fifo_0_synth_1/vivado.jou
+# Running On: uxsrv005, OS: Linux, CPU Frequency: 3457.889 MHz, CPU Physical cores: 8, Host memory: 101335 MB
+#-----------------------------------------------------------
+source axis_data_fifo_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3075.672 ; gain = 2.016 ; free physical = 16937 ; free virtual = 103580
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/ihp/departments/D-SYA/work/miglioranza/Encoder/Encoder.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/ihpusr/xilinx/vivado2021.2/Vivado/2021.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP axis_data_fifo_0, cache-ID = 904011798916ace6.
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 23 11:32:50 2025...

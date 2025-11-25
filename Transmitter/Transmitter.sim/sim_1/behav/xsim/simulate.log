@@ -1,0 +1,53 @@
+Time resolution is 1 ps
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb_Design_2_wrapper.uut.Design_2_i.CU_top_0.U0.Input_data_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /tb_Design_2_wrapper/uut/Design_2_i/CU_top_0/U0/Input_data_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial297_29  Scope: tb_Design_2_wrapper.uut.Design_2_i.CU_top_0.U0.Input_data_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 491
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb_Design_2_wrapper.uut.Design_2_i.LDPC_encoder_0.U0.\\Output_FIFO_inst(0)\ .output_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /tb_Design_2_wrapper/uut/Design_2_i/LDPC_encoder_0/U0/\Output_FIFO_inst(0)\/output_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial297_35677  Scope: tb_Design_2_wrapper.uut.Design_2_i.LDPC_encoder_0.U0.\\Output_FIFO_inst(0)\ .output_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 491
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb_Design_2_wrapper.uut.Design_2_i.LDPC_encoder_0.U0.\\Output_FIFO_inst(1)\ .output_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /tb_Design_2_wrapper/uut/Design_2_i/LDPC_encoder_0/U0/\Output_FIFO_inst(1)\/output_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial297_35677  Scope: tb_Design_2_wrapper.uut.Design_2_i.LDPC_encoder_0.U0.\\Output_FIFO_inst(1)\ .output_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 491
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb_Design_2_wrapper.uut.Design_2_i.LDPC_encoder_0.U0.\\Output_FIFO_inst(2)\ .output_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /tb_Design_2_wrapper/uut/Design_2_i/LDPC_encoder_0/U0/\Output_FIFO_inst(2)\/output_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial297_35677  Scope: tb_Design_2_wrapper.uut.Design_2_i.LDPC_encoder_0.U0.\\Output_FIFO_inst(2)\ .output_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 491
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. tb_Design_2_wrapper.uut.Design_2_i.LDPC_encoder_0.U0.\\Output_FIFO_inst(3)\ .output_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /tb_Design_2_wrapper/uut/Design_2_i/LDPC_encoder_0/U0/\Output_FIFO_inst(3)\/output_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial297_35677  Scope: tb_Design_2_wrapper.uut.Design_2_i.LDPC_encoder_0.U0.\\Output_FIFO_inst(3)\ .output_fifo.inst.\gen_fifo.xpm_fifo_axis_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /wrk/ci/prod/2021.2/sw/continuous/8687/packages/customer/vivado/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 491
+********************** HSIAO_H_MATRIX ******************************
+1101001101001000110100100010000 
+0101001001010100100010001000000 
+1001100100100010001000001010101 
+1000100010001000001100101100100 
+0010001000000111000111000100011 
+1001111110000001111000000111100 
+0011111111110000000000111110000 
+********************** HSIAO_H_MATRIX ******************************
+1101001101001000110100100010000 
+0101001001010100100010001000000 
+1001100100100010001000001010101 
+1000100010001000001100101100100 
+0010001000000111000111000100011 
+1001111110000001111000000111100 
+0011111111110000000000111110000 
+********************** HSIAO_H_MATRIX ******************************
+1101001101001000110100100010000 
+0101001001010100100010001000000 
+1001100100100010001000001010101 
+1000100010001000001100101100100 
+0010001000000111000111000100011 
+1001111110000001111000000111100 
+0011111111110000000000111110000 
+********************** HSIAO_H_MATRIX ******************************
+1101001101001000110100100010000 
+0101001001010100100010001000000 
+1001100100100010001000001010101 
+1000100010001000001100101100100 
+0010001000000111000111000100011 
+1001111110000001111000000111100 
+0011111111110000000000111110000 
+Note: Initializing Transmission
+Time: 50 ns  Iteration: 0  Process: /tb_Design_2_wrapper/stim_proc  File: /ihp/departments/D-SYA/work/miglioranza/tb_design_1_wrapper.vhd
+Note: Start Transmission
+Time: 100 ns  Iteration: 0  Process: /tb_Design_2_wrapper/stim_proc  File: /ihp/departments/D-SYA/work/miglioranza/tb_design_1_wrapper.vhd
+Note: End of data stream
+Time: 5220 ns  Iteration: 0  Process: /tb_Design_2_wrapper/stim_proc  File: /ihp/departments/D-SYA/work/miglioranza/tb_design_1_wrapper.vhd
+Note: End of frame
+Time: 201867500 ps  Iteration: 4  Process: /tb_Design_2_wrapper/stim_proc  File: /ihp/departments/D-SYA/work/miglioranza/tb_design_1_wrapper.vhd
+$finish called at time : 201967500 ps : File "/ihp/departments/D-SYA/work/miglioranza/tb_design_1_wrapper.vhd" Line 176
+INFO: xsimkernel Simulation Memory Usage: 1023204 KB (Peak: 1088740 KB), Simulation CPU Usage: 150460 ms
