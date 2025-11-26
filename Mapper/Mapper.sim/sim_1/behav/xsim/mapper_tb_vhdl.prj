@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Mapper.srcs/sources_1/imports/miglioranza/mapper.vhd" \
-"../../../../../mapper_tb.vhd" \
-
-# Do not sort compile order
-nosort

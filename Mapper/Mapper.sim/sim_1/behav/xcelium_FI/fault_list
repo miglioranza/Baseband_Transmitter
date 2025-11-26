@@ -1,1 +1,0 @@
-fault_target mapper_tb... -select_seqs -type SEU -force
